@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All Tweets from BSE</title>
+</head>
+<body>
+    {% for tweet in tweets %}
+        <p>{{ tweet.text }}</p>
+        <p>{{ tweet.created_at }}</p>
+        <p>{{ tweet.id_str }}</p>
+        <p>{{ tweet.truncated }}</p>
+        <p>{{ tweet.entities }}</p>
+        <p>{{ tweet.source }}</p>
+        <p>{{ tweet.possibly_sensitive }}</p>
+        <br>
+        <br>
+    {% endfor %}
+
+</body>
+</html>
